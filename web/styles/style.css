@@ -1,0 +1,58 @@
+@font-face {
+	font-family: "JetBrainsMono";
+	src: url("fonts/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
+small {
+	color: #ed8796;
+}
+
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 18px;
+	background-color: #24273a;
+}
+
+body {
+	font-family: "JetBrainsMono";
+	width: 600px;
+	margin: 0 auto;
+	padding: 0 15px 15px 15px;
+	text-align: center;
+
+	background-color: #2473a
+}
+
+.bg-image {
+	background-image: url("bg.png");
+}
+
+
+li {
+	list-style: none;
+	line-height: 1.25;
+	letter-spacing: 0px;
+	text-align: left
+}
+
+li::before {
+	content: "\2022";
+	color: #f5bde6;
+	font-size: 18px;
+	letter-spacing: 5px;
+}
+
+a {
+	color: #8bd5ca;
+}
+
+li,
+h1,
+h2,
+h4 {
+	color: #cad3f5;
+}
+

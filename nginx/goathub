@@ -1,0 +1,13 @@
+server {
+	listen 80;
+	server_name _;
+
+	location / {
+		root /var/www/goathub/;
+		index index.html;
+	}
+
+	location /py/ {
+		proxy_pass http://127.0.0.1:3000/;
+	}	
+}
