@@ -1,6 +1,10 @@
 @font-face {
 	font-family: "JetBrainsMono";
-	src: url("fonts/JetBrainsMono-Regular.woff2") format("woff2");
+	src: url("/fonts/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
+p {
+	color: #cad3f5 !important; 
 }
 
 small {
@@ -22,8 +26,6 @@ body {
 	margin: 0 auto;
 	padding: 0 15px 15px 15px;
 	text-align: center;
-
-	background-color: #2473a
 }
 
 .bg-image {

@@ -9,15 +9,22 @@ class StatusHandler(BaseHTTPRequestHandler):
 
         response = f"""
         <html>
-            <head><title>goatHub - Status</title></head>
+            <head>
+                <title>goatHub - Status</title>
+                <link rel="stylesheet" href="/styles/style.css">
+            </head>
             <body>
                 <h1>goatHub Current Status</h1>
+                <hr>
                 <p><strong>Server Status:</strong> OK</p>
                 <p><strong>Time:</strong> {current_time}</p>
                 <p><strong>Hostname:</strong> {hostname}</p>
+                <hr>
+                <a href="/">Back to Home</a>
             </body>
         </html>
         """
+
         self.send_response(200)
         self.send_header('Content-type', 'text/html')
         self.end_headers()
