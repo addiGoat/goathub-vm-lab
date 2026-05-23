@@ -1,0 +1,8 @@
+addigoat.ca {
+	root /var/www/goathub
+	file_server
+}
+
+web.addigoat.ca {
+	redir https://addigoat.ca{uri}
+}
