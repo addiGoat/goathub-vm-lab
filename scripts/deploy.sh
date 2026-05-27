@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
 set -r
 
-rsync -av --delete /home/addigoat/Projects/goathub/web/ addigoat@cherri:/var/www/goathub
+rsync -rzltD --delete \
+  --chmod=D755,F644 \
+  --chown=root:web \
+  --rsync-path="sudo rsync" \
+  ./ \
+  addigoat@cherri:/var/www/goathub/
